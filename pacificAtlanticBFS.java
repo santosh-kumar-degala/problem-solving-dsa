@@ -1,8 +1,6 @@
 import java.util.*;
 
 public class pacificAtlanticBFS {
-    private static final int[][] DIRS = {{1,0},{-1,0},{0,1},{0,-1}};
-    
     public List<List<Integer>> pacificAtlantic(int[][] heights) {
         List<List<Integer>> result = new ArrayList<>();
         if (heights == null || heights.length == 0 || heights[0].length == 0) return result;
@@ -41,6 +39,7 @@ public class pacificAtlanticBFS {
     
     private void bfs(int[][] heights, Queue<int[]> queue, boolean[][] visited) {
         int m = heights.length, n = heights[0].length;
+        int[][] DIRS = {{1,0},{-1,0},{0,1},{0,-1}};
         while (!queue.isEmpty()) {
             int[] cell = queue.poll();
             for (int[] dir : DIRS) {
