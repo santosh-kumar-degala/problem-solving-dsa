@@ -15,7 +15,7 @@ public class maxEnergy {
         int[] energy = {-5,2,-10,-5,1};
         int k = 3;
         maxEnergy me = new maxEnergy();
-        System.out.println(me.maximumEnergy(energy, k));
+        System.out.println(me.maximumEnergy(energy, k)); //3
     }
     
 }
